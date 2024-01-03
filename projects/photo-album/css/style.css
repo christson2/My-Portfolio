@@ -1,0 +1,150 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;      
+}
+
+/* General */
+
+.flex {
+    display: flex;
+}
+
+.text-container {
+    width: 100%;
+    gap: 45px;
+}
+
+.hero-text {
+    color: #096df9;
+    font-weight: bolder;
+    margin: 10px 0 28px;
+}
+
+.text-center {
+    flex: 30%;
+    text-align: justify;
+
+}
+
+section {    
+    width: 100%;
+    padding: 10px 50px 0;
+}
+
+/* Header section    */
+.container {
+    width: 100%;
+}
+
+nav {   
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* padding: 25px 0; */
+}
+
+.logo-box {
+    flex-basis: 150px; 
+    margin-right: 100px;   
+}
+
+.navlinks {
+    flex-basis: 500px;
+    padding-bottom: 7px;
+    margin: auto;
+}
+
+.navlinks ul {
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navlinks li a {
+   color: #00597a;
+   text-decoration: none;   
+    font-weight: bolder;
+}
+
+.navlinks li a:hover {
+    color: #5196f8;    
+}
+
+.links .logo {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin-right: 50px;
+}
+
+.social { 
+    flex-basis: 400px; 
+    justify-content: space-between;  
+    height: 100%; 
+    margin-top: 5px; 
+}
+
+.social i {
+    padding: 15px 0;
+}
+
+
+.picture-disply {
+    width: 570px;
+    height: 370px;
+}
+
+.picture-disply img {
+    width: 100%;
+    height: 100%
+}
+
+.btn {
+    background-color: #00597a;
+    border-radius: 50px;
+    padding: 10px 10px;
+    background-color: transparent;
+    border: 1px solid #f9f9f9;
+    color: #f9f9f9;    
+} 
+.btn2 {
+    margin: 10px 0;
+    width: 30%;
+}
+
+.sign-in {
+    background-color: #00597a;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #5196f8;    
+    color: #ffffff;   
+}
+
+
+
+#home {   
+    background-image: url('../images/project-img-2.PNG');
+    background-size: contain;
+    vertical-align: middle;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100vh;
+}
+
+.home-container {    
+    position: relative;
+    align-items: center;
+    padding-top: 10px;
+
+}
+.myImage {
+    width: 2.rem;
+    height: auto;
+}
+small, span {
+    color: #ffffff;
+}

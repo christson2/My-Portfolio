@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Image Button</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section class="header">    
+    <div class="container">
+      <nav class=" navbar flex">
+        <div class="logo-box">
+          <img src="images/sabi logo.png" alt="">
+        </div>
+
+        <div class="navlinks ">
+          <ul class=" links flex">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li> <a href="#blog">Blog</a></li>
+            <li><a href="#work">Our Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="social flex">
+          <div href="#"><i class="fab fa-twitter fa"></i></div>
+          <div href="#"><i class="fab fa-facebook fa"></i></div>
+          <div href="#"><i class="fab fa-instagram fa"></i></div>
+          <div href="#"><i class="fab fa-linkedin fa"></i></div>
+          <div href="#"><i class="fab fa-youtube fa"></i></div>
+          <a class="sign-in btn" href="#">Sign in / Join</a></a>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+ 
+  
+  <!-- Home -->
+  <section id="home">
+    <div class="picture-display-box">
+      <button id="myButton" class="btn">View images</button>
+      <div class="picture-disply">
+        <img id="myImage" src="images/skye-view.jpg" alt="" width="500px" >
+      </div>
+    </div>
+    <div class="home-container">    
+      <div class="hero flex">
+        <div class="hero-text">
+          <h1 class="heading-1">We make beautiful websites for all people.</h1>
+          <div class="action-links">
+            <div class="btn btn2">Start a Project</div>
+            <span>CALL US (+66) 010-020-0340 <br>
+              <small>For any inquiry</small>
+            </span>
+          </div>
+        </div>       
+      </div>
+    </div>    
+  </section>
+
+
+
+  <script>
+    var imgArray = new Array();
+    imgArray[0] = "images/img1.jpg";    
+    imgArray[1] = "images/img2.jpg";
+    imgArray[2] = "images/img3.jpg";
+    imgArray[3] = "images/img4_1.jpg";
+    imgArray[4] = "images/img5.jpg";
+    imgArray[5] = "images/img6.jpg";
+    imgArray[6] = "images/img7.jpg";
+    imgArray[7] = "images/menu-img4.PNG";
+    imgArray[8] = "images/hydro-project-1.PNG";
+    imgArray[9] = "images/hydro-project-1.PNG";
+    imgArray[10] = "images/project-img-2.PNG";
+
+    var imgIndex = 0;
+    document.getElementById("myButton").addEventListener("click", function () {
+      imgIndex++;
+      if (imgIndex >= imgArray.length) {
+        imgIndex = 0;
+      }
+
+      document.getElementById("myImage").src = imgArray[imgIndex];
+    });    
+  </script>
+</body>
+
+</html>
