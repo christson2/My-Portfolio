@@ -524,9 +524,6 @@ a:hover {
   transform: rotate(180deg);  
 }
 
-.logo-container {
-  padding-top: 20px;
-}
 .logo-container img {
   height: 50px; 
   border-radius: 50%;
@@ -543,8 +540,8 @@ a:hover {
 .logo #middle {
   /* display: inline; */
   position: absolute;
-  top: 28px;
-  left: 15px;
+  top: 27px;
+  left: 14px;
   color: red;
   text-transform: lowercase;
   font-size: 0.4em;
@@ -575,12 +572,15 @@ a:hover {
   padding: 12px 0;
 }
 
-@media screen and (max-width: 320px) {  
+@media screen and (max-width: 320px) {
+  .logo #middle {
+   top: 20px;
+   left: 13px;
+  }
  #header{
     padding: 3px 0 0 0;
   }
 }
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
